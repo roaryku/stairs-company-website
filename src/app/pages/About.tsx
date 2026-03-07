@@ -136,7 +136,7 @@ export function About() {
 
             <AnimatedSection className="order-1 md:order-2">
               <h2 className="text-4xl mb-6 text-stone-900">
-                Local Service, Personal Touch
+                Local Service
               </h2>
               <p className="text-gray-600 mb-4">
                 As a proud local business, we serve homeowners exclusively in the Vancouver and Portland area. 

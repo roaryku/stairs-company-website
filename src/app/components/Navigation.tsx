@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Menu, X } from 'lucide-react';
-// import logo from '../../assets/logo.svg';
 import logo from  '../../assets/logo (1).svg';
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
