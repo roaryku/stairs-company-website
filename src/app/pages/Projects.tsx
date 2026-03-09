@@ -315,7 +315,7 @@ export function Projects() {
             Ready to Elevate Your Space?
           </h2>
           <p className="text-xl md:text-2l mb-8 text-gray-200 max-w-2xl mx-auto">
-            Expert stair services for homes across the Portland–Vancouver area.
+            Expert stair services for homes across the Portland & Vancouver area.
           </p>
 
           <Link to="/contact">
