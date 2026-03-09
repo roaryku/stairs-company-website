@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { AnimatedSection } from '../components/AnimatedSection';
-import { X } from 'lucide-react';
+import { ArrowRight, X } from 'lucide-react';
 
 import ctaImage from '../../assets/stairs-seven.png';
 import heroProjectsImage from '../../assets/projects.png';
@@ -15,6 +15,7 @@ import customWalnutStairNosesImage from '../../assets/my stairs.png';
 import widePlankOakFlooringImage from '../../assets/living-room.png';
 import europeanOakFlooringSuiteImage from '../../assets/floor-two.png';
 import naturalOakStairNosesImage from '../../assets/stairs-one.png';
+import { Link } from 'react-router-dom';
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -316,16 +317,20 @@ export function Projects() {
           <p className="text-xl text-gray-200 mb-8">
             Let's bring your vision to life with expert craftsmanship and attention to detail
           </p>
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            href="/contact"
-            className="inline-block bg-[#9A7D1A] hover:bg-[#7A6515] text-white px-8 py-4 rounded-full text-lg transition-colors"
-          >
-            Start Your Project
-          </motion.a>
+
+          <Link to="/contact">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-[#9A7D1A] hover:bg-[#7A6515] text-white px-10 py-5 rounded text-sm uppercase tracking-wider transition-colors inline-flex items-center gap-2 border-2 border-[#9A7D1A] hover:border-[#7A6515]"
+            >
+              Get Your Free Quote
+              <ArrowRight size={20} />
+            </motion.button>
+          </Link>
         </AnimatedSection>
       </section>
     </div>
+    
   );
 }

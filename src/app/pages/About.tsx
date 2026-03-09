@@ -332,7 +332,7 @@ export function About() {
               Ready to Elevate Your Space?
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
-              Serving Vancouver and Portland with premium staircase solutions
+              Let's bring your vision to life with expert craftsmanship and attention to detail
             </p>
             <Link to="/contact">
               <motion.button

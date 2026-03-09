@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { AnimatedSection } from '../components/AnimatedSection';
-import { Ruler, Hammer, Palette, Wrench, Shield, } from 'lucide-react';
+import { Ruler, Hammer, Palette, Wrench, Shield, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 import ctaStairsImage from '../../assets/stairs-seven.png';
 import heroStairsImage from '../../assets/stairs-twelve.png'; // changed-available
@@ -306,16 +307,19 @@ export function Services() {
             Ready to Elevate Your Space?
           </h2>
           <p className="text-xl text-gray-200 mb-8">
-            Let's transform your staircase into a stunning centerpiece
+            Let's bring your vision to life with expert craftsmanship and attention to detail
           </p>
-          <motion.a
-            href="/contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block bg-[#9A7D1A] text-white px-8 py-4 rounded-lg text-lg hover:bg-[#7A6515] transition-colors"
-          >
-            Get Your Free Consultation
-          </motion.a>
+
+           <Link to="/contact">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-[#9A7D1A] hover:bg-[#7A6515] text-white px-10 py-5 rounded text-sm uppercase tracking-wider transition-colors inline-flex items-center gap-2 border-2 border-[#9A7D1A] hover:border-[#7A6515]"
+              >
+                Get Your Free Quote
+                <ArrowRight size={20} />
+              </motion.button>
+            </Link>
         </AnimatedSection>
       </section>
     </div>
