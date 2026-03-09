@@ -437,8 +437,8 @@ export function Contact() {
           <h2 className="text-4xl md:text-5xl mb-6 text-white">
             Ready to Elevate Your Space?
           </h2>
-          <p className="text-xl text-gray-200 mb-8">
-            Let's bring your vision to life with expert craftsmanship and attention to detail
+          <p className="text-xl md:text-2l mb-8 text-gray-200 max-w-2xl mx-auto">
+            Expert stair services for homes across the Portland–Vancouver area.
           </p>
 
           <Link to="/contact">
